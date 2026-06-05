@@ -15,7 +15,7 @@ Valget falt på **Go (Golang)** på grunn av språkets ekstreme ytelse og effekt
 * **Server-Sent Events (SSE):** Brukes i stedet for WebSockets for envejs sanntidsstrømming av metadata til klientene, noe som reduserer protokoll-overhead og holder ressursbruken minimal.
 * **Goroutines & Channels:** Hver tilkoblet app-klient tildeles en lettvektstråd (Goroutine). Koordinering og distribusjon av live-events skjer trådsikkert via Go Channels og en sentralisert `Broker`-struktur.
 
-### 2. Android App (Frontend)
+### 2. Android App (Frontend) - Lagret som Branch "Android"
 Appen er bygget etter moderne standarder for Android-utvikling, med fokus på reaktivitet og lav batteri-/ressursbruk under kontinuerlig nettverkslytting.
 * **Jetpack Compose:** Brukes for et 100 % deklarativt UI. Grensesnittet reagerer og animeres umiddelbart basert på tilstandsendringer.
 * **Kotlin Coroutines & Flows:** Nettverkslaget bruker `callbackFlow` fra OkHttp for å transformere den kontinuerlige SSE-strømmen til en reaktiv Kotlin-strøm. Dette sikrer at appen aldri blokkerer hovedtråden (UI-tråden).
