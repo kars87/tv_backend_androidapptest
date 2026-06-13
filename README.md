@@ -1,8 +1,8 @@
-# TV - Live Event Streams (Proof of Concept)
+# Live Event Streams (Proof of Concept)
 
 Dette prosjektet er en teknisk demonstrasjon (PoC) av en moderne, reaktiv arkitektur for håndtering av sanntids-events i en strømmetjeneste (f.eks. måloppdateringer, live-statistikk og reklame-triggers under direktesendte eventer). 
 
-Systemet består av **Go-backend** og en moderne **Android-app skrevet i Kotlin og Jetpack Compose**, bundet sammen av en vedvarende datastrøm via Server-Sent Events (SSE).
+Systemet består av **Go-backend** og en simpel **Android-app skrevet i Kotlin og Jetpack Compose**, bundet sammen av en vedvarende datastrøm via Server-Sent Events (SSE).
 
 ---
 
